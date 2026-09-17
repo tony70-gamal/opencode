@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Food Waste-to-Biogas — WASTE HAS ENERGY | SUT Energy Engineering</title>
+<meta name="description" content="Smart Food Waste-to-Biogas: Turn organic waste into measurable clean energy with anaerobic digestion, IoT monitoring & AI closed-loop control. 18L prototype — SUT Energy Engineering.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="dot"></span> SMART BIOGAS <small>SUT &bull; Energy Engineering</small></div>
+    <div class="nav-links"><a href="#problem">Problem</a><a href="#how">How</a><a href="#prototype">Prototype</a><a href="#tech">Tech</a><a href="#calculator">Calculator</a><a href="#team" class="btn btn-sm">Request Demo</a></div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="kicker">EL SEWEDY UNIVERSITY OF TECHNOLOGY &bull; INNOVATORS SUPPORT FUND</div>
+      <h1>WASTE<br><span class="accent">HAS ENERGY.</span></h1>
+      <p class="lead">We transform organic waste from a disposal problem into a <strong>measurable energy resource</strong> using anaerobic digestion, IoT monitoring and AI-based closed-loop control.</p>
+      <div class="hero-stats">
+        <div><strong>18 L</strong><span>digester<br>12-14L working</span></div>
+        <div><strong>100&times;50&times;70</strong><span>cm mobile<br>frame</span></div>
+        <div><strong>60 L &rarr; 500 L+</strong><span>pilot &rarr;<br>commercial</span></div>
+      </div>
+      <div class="cta-row"><a href="#prototype" class="btn btn-primary">See Live Prototype &darr;</a><a href="#calculator" class="btn btn-ghost">Try Savings Calculator</a></div>
+      <p class="micro">v2.1 FIXED 06 Sep 2026 &bull; 18M tons food waste/yr Egypt &bull; 81-82% power from gas imports &mdash; Prototype pending pilot validation</p>
+    </div>
+    <div class="hero-media">
+      <div class="media-card">
+        <img src="assets/prototype_main.jpg" alt="Smart Biogas 18L prototype" onerror="this.style.display='none';document.getElementById('fallback').style.display='flex'">
+        <div id="fallback" class="media-fallback" style="display:none"><div>Drop your photo as<br><code>assets/prototype_main.jpg</code><br><small>1600&times;1200 JPG</small></div></div>
+        <div class="media-caption">Real build &mdash; not a render &bull; Hopper &rarr; Digester &rarr; Gas Storage &rarr; Control Cabinet (2&times; ESP32)</div>
+      </div>
+      <div class="trust"><span>Supervisor: Dr. Mariam Ahmed Sameh</span><span>Team: Zeyad &bull; Hamza &bull; Ahmed &bull; Nour &bull; Caren</span></div>
+    </div>
+  </div>
+</header>
+<section id="problem" class="section section-alt">
+  <div class="container">
+    <div class="pill">01 &mdash; THE PROBLEM</div>
+    <h2>Two national challenges.<br>One closed-loop solution.</h2>
+    <div class="three">
+      <div class="card"><div class="icon">W</div><h3>Pays to throw away</h3><p>~18M tons food waste/yr (UNEP 2024). 80-88% ends in open dumps &mdash; methane, disease vectors, lost resource.</p><small>Business plan §7</small></div>
+      <div class="card"><div class="icon">E</div><h3>Pays for energy</h3><p>81-82% of Egypt electricity is gas-based. Imports, volatility, carbon risk.</p><small>§4 Energy Value</small></div>
+      <div class="card highlight"><div class="icon">R</div><h3>Our loop</h3><p><strong>Food Waste &rarr; Pre-processing &rarr; Anaerobic Digestion &rarr; Biogas &rarr; Energy &rarr; IoT+AI Data.</strong> Waste becomes auditable kWh.</p><small>Digestate &rarr; bio-fertilizer after validation</small></div>
+    </div>
+    <div class="quote">&ldquo;Don&rsquo;t market as &lsquo;a machine that makes biogas&rsquo;. Market as &lsquo;a smart system that transforms organic waste into a measurable energy resource.&rsquo;&rdquo; &mdash; §4</div>
+  </div>
+</section>
+<section id="how" class="section">
+  <div class="container">
+    <div class="pill">02 &mdash; HOW IT WORKS</div>
+    <h2>Four value pillars. One integrated platform.</h2>
+    <div class="flow"><span>FOOD WASTE</span><i>&rarr;</i><span>PRE-PROCESSING</span><i>&rarr;</i><span>DIGESTER 35&deg;C</span><i>&rarr;</i><span>BIOGAS</span><i>&rarr;</i><span>GENERATOR</span><i>&rarr;</i><span>ELECTRICITY</span><i>&rarr;</i><span class="accent-bg">IoT+AI DATA</span></div>
+    <div class="four">
+      <div class="mini"><strong>1. Waste Value</strong><br>Diverted from landfill, quantified kg/day.</div>
+      <div class="mini"><strong>2. Energy Value</strong><br>Biogas for cooking/heating/electricity.</div>
+      <div class="mini"><strong>3. Data Value</strong><br>Temp, pH, pressure, CH4/H2S, alerts, history.</div>
+      <div class="mini"><strong>4. Sustainability Value</strong><br>Waste processed, GHG avoided &mdash; measurable.</div>
+    </div>
+    <div class="competitive"><h4>Why not just a conventional digester?</h4><p>Ours = <strong>Biogas + IoT + AI + Automation + Safety + Data</strong> &mdash; <em>monitor &rarr; analyze &rarr; control &rarr; optimize</em>, mechanical safety never depends on software. <a href="#tech">Tech stack &rarr;</a></p></div>
+  </div>
+</section>
+<section id="prototype" class="section section-dark">
+  <div class="container">
+    <div class="pill light">03 &mdash; PROTOTYPE &mdash; REAL BUILD</div>
+    <h2 class="light">Not a render. A working mobile rig.</h2>
+    <div class="proto-grid">
+      <div class="proto-media">
+        <img src="assets/prototype_main.jpg" alt="Prototype" onerror="this.style.display='none'">
+        <div class="callouts"><span class="callout c1"><b>Feed hopper</b> &mdash; shredded waste in</span><span class="callout c2"><b>18 L digester</b> &mdash; 12-14L, 35&deg;C, mixing &amp; heater</span><span class="callout c3"><b>Gas storage</b> &mdash; bladder + regulator + filter</span><span class="callout c4"><b>Gas handling</b> &mdash; non-return + relief + flame arrestor</span><span class="callout c5"><b>Control cabinet</b> &mdash; 2&times; ESP32, relays, PSU</span><span class="callout c6"><b>Frame</b> &mdash; 100&times;50&times;70 cm, casters</span></div>
+      </div>
+      <div class="proto-specs">
+        <h3>18 L Spec &mdash; Current Build</h3>
+        <table><tr><td>Digester</td><td>18 L HDPE, gas-tight, insulated</td></tr><tr><td>Working</td><td>12-14 L</td></tr><tr><td>Mix/Heat</td><td>Gear motor + paddle, heater, 35&deg;C</td></tr><tr><td>Gas</td><td>5-10 L bladder, non-return, relief, arrestor</td></tr><tr><td>Sensors</td><td>DS18B20x2, MQ-4, MQ-136, MPX5010, JSN-SR04T, pH, opt NDIR</td></tr><tr><td>Control</td><td>2&times; ESP32-WROOM-32, relay, solenoid, buck</td></tr><tr><td>Safety</td><td>Mech. relief (indep.), MQ alarms, PPE, vent, extinguisher</td></tr><tr><td>Scale</td><td>18 L &rarr; 60 L &rarr; 500 L+ (S/M/L)</td></tr></table>
+        <div class="cost-note"><strong>Prototype &asymp; 10,900 EGP</strong> provisional &mdash; pending quotations. <em>Prototype &ne; commercial price.</em></div>
+        <a href="#calculator" class="btn btn-primary btn-block">Calculate Your Savings &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="tech" class="section">
+  <div class="container">
+    <div class="pill">04 &mdash; TECHNOLOGY &mdash; CLOSED-LOOP</div>
+    <h2>It doesn&rsquo;t just monitor. It decides and acts.</h2>
+    <div class="tech-grid">
+      <div class="tech-diagram">
+        <div class="layer"><span>Sensors</span><small>DS18B20, MQ-4/136, MPX5010, JSN-SR04T, pH</small></div><div class="arrow">&darr;</div>
+        <div class="layer"><span>2&times; ESP32</span><small>WROOM-32 &mdash; control + telemetry</small></div><div class="arrow">&darr; MQTT over TLS</div>
+        <div class="layer"><span>Mosquitto + Node.js/Express</span><small>ACLs, ingestion, auth</small></div><div class="arrow">&darr;</div>
+        <div class="layer"><span>PostgreSQL + TimescaleDB</span><small>Hypertables, historian</small></div><div class="arrow">&darr; HTTPS REST</div>
+        <div class="layer"><span>React + Grafana + Python AI</span><small>Real-time, alerts, anomaly, auto-vent</small></div>
+      </div>
+      <div class="tech-points">
+        <h3>Competitive moat</h3>
+        <ul><li><strong>Closed-loop:</strong> pause feeding if pH/pressure off, auto-vent + mech. relief backstop</li><li><strong>Safety:</strong> IEC 62443, TLS, signed OTA, watchdog &mdash; relief is mechanical</li><li><strong>Data:</strong> kg/day, m3/kg, kWh/kg, EGP/m3, uptime, calibration logs</li><li><strong>Modular:</strong> S/M/L per waste stream, 10-step validation before ROI</li></ul>
+        <div class="stack-note">Stack v2.1: PostgreSQL+TimescaleDB (not MySQL) per 1.pdf:15.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="calculator" class="section section-alt">
+  <div class="container">
+    <div class="pill">05 &mdash; SAVINGS CALCULATOR</div>
+    <h2>Turn interest into a business case.</h2>
+    <p class="sub">Illustrative defaults (0.10 m3/kg) &mdash; replace with pilot BMP. <em>Measure, then monetize.</em></p>
+    <div class="calc-grid">
+      <div class="calc-inputs">
+        <label>Waste per day (kg/day) <input type="range" id="waste" min="10" max="500" value="100"><span id="wasteVal">100 kg</span></label>
+        <label>Operating days / year <input type="range" id="days" min="200" max="365" value="300"><span id="daysVal">300</span></label>
+        <label>Disposal cost (EGP/kg) <input type="number" id="dispCost" value="0.5" step="0.1"></label>
+        <label>Electricity price (EGP/kWh) <input type="number" id="kwhPrice" value="2.5" step="0.1"></label>
+        <label>Biogas yield (m3/kg) <input type="number" id="yield" value="0.10" step="0.01"></label>
+        <label>CH4 % <input type="range" id="ch4" min="50" max="70" value="60"><span id="ch4Val">60%</span></label>
+        <label>Engine eff. <input type="range" id="eff" min="25" max="40" value="30"><span id="effVal">30%</span></label>
+        <div class="calc-cta"><button class="btn btn-primary" onclick="calc()">Calculate &rarr;</button><small>Annual Benefit = Energy Savings + Disposal Savings</small></div>
+      </div>
+      <div class="calc-outputs">
+        <div class="out"><span>Annual waste</span><strong id="oWaste">-</strong></div><div class="out"><span>Biogas</span><strong id="oBiogas">-</strong></div><div class="out"><span>Energy (theor.)</span><strong id="oEnergy">-</strong></div><div class="out"><span>Electricity</span><strong id="oElec">-</strong></div><div class="out"><span>Disposal saving</span><strong id="oDisp">-</strong></div><div class="out"><span>Energy saving</span><strong id="oEnSave">-</strong></div><div class="out total"><span>Annual benefit</span><strong id="oBenefit">-</strong></div>
+        <div class="disclaimer">Illustrative until 30-day pilot measured. Replace 0.10 with BMP per VDI 4630.</div>
+        <a href="#lead" class="btn btn-primary btn-block">Get my Waste Assessment &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section"><div class="container"><div class="pill">06 &mdash; BUSINESS MODEL</div><h2>6 revenue streams.</h2><div class="biz-grid"><div class="biz"><strong>System sales</strong>S/M/L per waste</div><div class="biz"><strong>Installation</strong>Assessment + training</div><div class="biz"><strong>Maintenance</strong>Calibration + SLA</div><div class="biz"><strong>IoT subscription</strong>Cloud + analytics</div><div class="biz"><strong>Upgrades</strong>Sensors, storage</div><div class="biz"><strong>Engineering</strong>Custom design</div></div><p class="center">LTV &asymp; 2.5&times; hardware alone. Priority: Universities &rarr; Restaurants/Hotels &rarr; Food processing &rarr; Agri-ops.</p><div class="funnel"><span>Awareness</span>&rarr;<span>Interest</span>&rarr;<span>Demonstration</span>&rarr;<span>Data</span>&rarr;<span>Pilot 30-90d</span>&rarr;<span>Commercial</span></div></div></section>
+<section id="lead" class="section section-dark">
+  <div class="container"><div class="lead-grid"><div>
+        <h2 class="light">Waste Assessment &mdash; start with data, not a quote.</h2>
+        <p class="light-muted">We ask &ldquo;How much waste do you generate daily?&rdquo; &mdash; then we pilot, then propose ROI from real data.</p>
+        <form class="form" onsubmit="event.preventDefault(); alert('Wire to hamza250102724@sut.edu.eg');">
+          <div class="two"><input placeholder="Organization" required><input placeholder="Contact name" required></div>
+          <div class="two"><input placeholder="Email" type="email" required><input placeholder="Phone / WhatsApp"></div>
+          <div class="two"><input placeholder="kg waste / day" type="number"><input placeholder="Waste type"></div>
+          <div class="two"><input placeholder="Disposal cost (EGP/mo)"><input placeholder="Energy use (kWh/mo)"></div>
+          <textarea placeholder="Space, utilities, ESG goals, location" rows="3"></textarea>
+          <button class="btn btn-primary btn-block">Request Pilot Assessment &rarr;</button>
+          <small>Or email: hamza250102724@sut.edu.eg &bull; nour250100331@sut.edu.eg</small>
+        </form></div>
+      <div id="team"><h3>Team & Contact</h3><ul class="team"><li><strong>Zeyad Mohamed AbdelAleem</strong> &mdash; Lead, 250102529</li><li><strong>Hamza Ahmed AbdelFattah</strong> &mdash; 250102724</li><li><strong>Ahmed Sayed</strong> &mdash; 250101731</li><li><strong>Nour Gamal Ahmed</strong> &mdash; 250100331</li><li><strong>Caren George Samir</strong> &mdash; 250200498</li></ul><p><strong>Supervisor:</strong> Dr. Mariam Ahmed Sameh</p><p><strong>Institution:</strong> El Sewedy University of Technology &mdash; Energy Engineering 2025/2026</p><div class="safety-box"><strong>Safety first:</strong> Mechanical relief + non-return + flame arrestor + MQ alarms + ventilation + PPE. Software never replaces a relief valve.</div></div>
+    </div></div>
+</section>
+<footer class="footer"><div class="container"><div>&copy; 2026 SUT Smart Biogas &bull; v2.1 FIXED 06 Sep 2026 &bull; CONFIDENTIAL</div><div><a href="content/calendar.csv">Calendar</a> &bull; <a href="content/press_release.md">Press Kit</a></div></div></footer>
+<script src="calculator.js"></script>
+</body>
+</html>

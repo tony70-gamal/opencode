@@ -1,0 +1,30 @@
+# Render Free (No Card) — 2 services: AI (docker, sleeps 15m) + Campaign static (never sleeps, instant)
+services:
+  - type: web
+    name: revolt-ai
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/status
+    envVars:
+      - key: API_URL
+        value: https://revolt-ai.onrender.com/webhook
+
+  - type: static
+    name: smart-biogas-campaign
+    buildCommand: ""
+    publishPath: campaign/biogas
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: /*.css
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: /*.js
+        name: Cache-Control
+        value: public, max-age=31536000

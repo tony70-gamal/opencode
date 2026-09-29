@@ -14,9 +14,9 @@ VID = ROOT / "videos"
 CAP = ROOT / "captions"
 
 # Zips are derived artefacts and are not committed to git, so the download
-# buttons point at the published host instead of a relative path. That keeps
-# the gallery working from the GitHub CDN mirror as well as from Surge.
-ZIP_BASE = "https://smart-biogas-social.surge.sh/"
+# buttons point at the GitHub Release assets. Surge was unreliable (HTTP 451 on
+# some CDN edges) so nothing here depends on it any more.
+ZIP_BASE = "https://github.com/tony70-gamal/opencode/releases/download/social-kit-v1/"
 
 GROUPS = [
     ("Carousel A — WASTE to ENERGY (IG 1080x1350)", "ig01_waste_to_energy", "carousel"),

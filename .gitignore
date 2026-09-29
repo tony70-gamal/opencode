@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# OS
+Thumbs.db
+.DS_Store
+*.tmp
+
+# Presentation outputs are tracked intentionally, but ignore temp backups
+~$*.pptx
+*.pptx.tmp
+
+# Secrets / local config
+.env.local
+
+# Social kit: the raw images/videos are tracked so the GitHub CDN mirror can serve
+# them, but the generated archives are derived artefacts (published to Surge).
+campaign/social/*.zip
